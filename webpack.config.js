@@ -13,14 +13,14 @@ module.exports = {
         contentBase: "./build", //本地服务器所加载的页面所在的目录
         historyApiFallback: true, //不跳转
         inline: true, //实时刷新
-        port: 9000,
-        proxy: {
-            '/*': { 
-                target: 'https://www.sojson.com',
-                secure: false, // 接受 运行在 https 上的服务
-                changeOrigin: true
-            }
-        }
+        port:9000
+        // proxy: {
+        //     '/getweather/*': { 
+        //         target: 'https://www.sojson.com/open/api/weather/',
+        //         secure: false, // 接受 运行在 https 上的服务
+        //         changeOrigin: true
+        //     }
+        // }
     },
     module: {
         rules: [{
